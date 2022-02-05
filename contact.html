@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลติดต่อ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"> </script>
+</head>
+<style>
+ body {
+     margin-top: 20px;
+     font-family: th sarabun new;
+     font-style: italic;
+     font-size: 24px;
+     background-color: moccasin;
+ }
+ #p1 {
+     font-size: 48px;
+     font-weight: bolder;
+ }
+ hr {
+     border: 2px groove yellowgreen;
+ }
+ #name {
+     width: 100%;
+ }
+ #email {
+     width: 100%;
+ }
+ #message {
+     width: 100%;
+     height: 100px;
+ }
+ .social {
+    align-items: center;
+    font-size: 32px;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+  #gohome {
+      float: right;
+  }
+</style>
+<script>
+    function myFunction() {
+        var table = document.getElementById("table");
+        var row = table.insertRow(-1);
+    var name = row.insertCell(0);
+    var email = row.insertCell(1);
+    var message = row.insertCell(2);
+
+  name.innerHTML = document.getElementById("name").value;
+  email.innerHTML = document.getElementById("email").value;
+  message.innerHTML = document.getElementById("message").value;   
+  return false;  
+    }
+</script>
+<body >
+    
+    
+        <h1 class="text-center text-primary" style="font-size: 56px; text-shadow: 2px 2px 5px blue;"><u>ข้อมูลติดต่อ</u></h1>
+
+      <br>
+      <div class="container-fluid" style="text-align: center;">
+        <p id ="p1" class="text-danger" style="text-shadow: 2px 2px 5px yellow;">ช่องทางการติดต่อ</p>
+        <span class="text-success">เบอร์โทรศัพท์: 0802075501</span><br><br>
+        <span class="text-success">Facebook: <a href="https://www.facebook.com/supanat1998/" class ="text-success">Fluke Supanat</a></span>
+        <br><br>
+        <span class="text-success">Instagram: <a href="https://www.instagram.com/majorfluker/" class ="text-success">majorfluker</a></span>
+        <br><br>
+        <span class="text-success">E-mail: supanat2541@hotmail.com ,6105500059@rumail.ru.ac.th</span>
+        
+      </div>
+        
+        
+        <hr>
+        <br>
+        <div class="container text-info">
+            <form action="index.html" method="get">
+            <div class="form-group ">
+                <span>ชื่อของคุณ : <input type="text" id="name" class="form-control"></span> <br><br>
+            <span>E-mail ของคุณ : <input type="text" id="email" class="form-control"></span> <br><br>
+           <span>ข้อความที่ต้องการส่งถึงเรา : <input type="text" id="message" class="form-control"></span> <br>
+           <input type="button" value="GO" class="btn btn-dark btn-lg" onclick="myFunction()">
+           <input type="submit" value="หน้าแรก" class="btn btn-dark btn-lg " id="gohome">
+            </div>
+            
+        </form>
+        </div>
+
+        
+        <br>
+        <hr>
+        <br>
+        <div class="container"><table id="table" class="table table-dark table-hover">
+            <tr>
+                <th>ชื่อ</th>
+                <th>E-amil</th>
+                <th>ข้อความ</th>
+            </tr>
+        </table></div>
+
+        <br><br>
+        
+
+        <footer class="container-fluid text-center bg-dark text-white">
+            <div class="social ">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/home?lang=th"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+          </footer>
+</body>
+
+</html>
